@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Guide",
+    "link": "/guide/design",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "Component",
+    "link": "/component/overview",
+    "activeMatch": "/component/"
+  },
+  {
+    "text": "Resource",
+    "link": "/resource/index",
+    "activeMatch": "/resource/"
+  },
+  {
+    "text": "Blocks",
+    "link": "/blocks/index",
+    "activeMatch": "/blocks/"
+  }
+]
