@@ -165,6 +165,14 @@ $form-item-label-top-margin-bottom: map.merge(
     }
   }
 
+  @include e(description) {
+    width: 100%;
+    color: getCssVar('color-info');
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1;
+  }
+
   @include e(error) {
     color: getCssVar('color-danger');
     font-size: 12px;

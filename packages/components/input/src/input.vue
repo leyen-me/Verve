@@ -5,6 +5,7 @@
       {
         [nsInput.bm('group', 'append')]: $slots.append,
         [nsInput.bm('group', 'prepend')]: $slots.prepend,
+        [nsInput.bm('group', 'verce')]: props.verce,
       },
     ]"
     :style="containerStyle"

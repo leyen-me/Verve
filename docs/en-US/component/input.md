@@ -21,10 +21,10 @@ Do not support `v-model` modifiers.
 
 :::grid-demo
 
-input/basic:Simple input
-input/disabled:Disabled input
-input/basic:Simple input
-input/disabled:Disabled input
+input/verve/simple:Simple input
+input/verve/required:Required input
+input/verve/helper:Input with helper text
+input/verve/helper:Input with helper text
 
 :::
 

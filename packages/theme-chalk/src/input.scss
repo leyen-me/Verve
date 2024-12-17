@@ -469,3 +469,8 @@
 @include b(input-hidden) {
   display: none !important;
 }
+
+.el-form--verce .el-input{
+  --el-input-border-radius: 10px;
+  --el-border-radius-base: 10px;
+}

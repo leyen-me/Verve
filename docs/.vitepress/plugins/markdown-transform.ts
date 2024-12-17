@@ -146,6 +146,7 @@ ${linksText}`
 
 const getExampleImports = (componentId: string) => {
   const examplePath = path.resolve(docRoot, 'examples', componentId)
+
   if (!fs.existsSync(examplePath)) return []
   const files = fs.readdirSync(examplePath)
   const imports: string[] = []
@@ -158,6 +159,20 @@ const getExampleImports = (componentId: string) => {
     imports.push(
       `import ${name} from '../../examples/${componentId}/${file}.vue'`
     )
+  }
+
+  const vervePath = path.resolve(examplePath, 'verve')
+  if (fs.existsSync(vervePath)) {
+    const verveFiles = fs.readdirSync(vervePath)
+    for (const item of verveFiles) {
+      if (!/\.vue$/.test(item)) continue
+      const file = item.replace(/\.vue$/, '')
+      const name = camelize(`Ep-${componentId}-verve-${file}`)
+
+      imports.push(
+        `import ${name} from '../../examples/${componentId}/verve/${file}.vue'`
+      )
+    }
   }
 
   return imports

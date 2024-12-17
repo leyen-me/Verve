@@ -166,6 +166,11 @@ export const inputProps = buildProps({
     type: Number,
     default: 2,
   },
+
+  /**
+   * @description whether to use verce input
+   */
+  verce: Boolean,
   ...useAriaProps(['ariaLabel']),
 } as const)
 export type InputProps = ExtractPropTypes<typeof inputProps>

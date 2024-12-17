@@ -18,7 +18,7 @@
   <br>
 </p>
 
-<p align="center">Verve - A Element Plus Collection</p>
+<p align="center">Verve - A Element Plus Component Variant Collection</p>
 
 ## Introduction
 

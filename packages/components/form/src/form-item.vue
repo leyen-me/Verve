@@ -23,8 +23,19 @@
       </component>
     </form-label-wrap>
 
-    <div :class="ns.e('content')" :style="contentStyle">
+    <div
+      :class="[
+        ns.e('content'),
+        {
+          'flex-col': !!slots.description,
+        },
+      ]"
+      :style="contentStyle"
+    >
       <slot />
+      <div v-if="slots.description" :class="ns.e('description')">
+        <slot name="description" />
+      </div>
       <transition-group :name="`${ns.namespace.value}-zoom-in-top`">
         <slot v-if="shouldShowError" name="error" :error="validateMessage">
           <div :class="validateClasses">

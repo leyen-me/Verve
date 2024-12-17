@@ -107,6 +107,10 @@ export const formProps = buildProps({
   scrollIntoViewOptions: {
     type: [Object, Boolean],
   },
+  /**
+   * @description Whether to use verce form style.
+   */
+  verce: Boolean,
 } as const)
 export type FormProps = ExtractPropTypes<typeof formProps>
 export type FormMetaProps = ExtractPropTypes<typeof formMetaProps>

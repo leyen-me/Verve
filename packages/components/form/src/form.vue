@@ -45,6 +45,9 @@ const formClasses = computed(() => {
       [ns.m(`label-${labelPosition}`)]: labelPosition,
       [ns.m('inline')]: inline,
     },
+    {
+      [ns.m('verce')]: props.verce,
+    },
   ]
 })
 
